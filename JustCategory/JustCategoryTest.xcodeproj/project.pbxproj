@@ -13,6 +13,10 @@
 		081A23391C15EA7D00C4B259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081A23371C15EA7D00C4B259 /* Main.storyboard */; };
 		081A233B1C15EA7D00C4B259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081A233A1C15EA7D00C4B259 /* Assets.xcassets */; };
 		081A233E1C15EA7D00C4B259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081A233C1C15EA7D00C4B259 /* LaunchScreen.storyboard */; };
+		081A23471C15EC4E00C4B259 /* ZLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A23461C15EC4E00C4B259 /* ZLModel.m */; settings = {ASSET_TAGS = (); }; };
+		081A234A1C15EC6F00C4B259 /* ZLModel+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A23491C15EC6F00C4B259 /* ZLModel+Property.m */; settings = {ASSET_TAGS = (); }; };
+		081A234D1C15ECF000C4B259 /* NSObject+ZLProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A234C1C15ECF000C4B259 /* NSObject+ZLProperty.m */; settings = {ASSET_TAGS = (); }; };
+		081A23511C15ED2900C4B259 /* NSObject+ZLInvokeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 081A23501C15ED2900C4B259 /* NSObject+ZLInvokeMethod.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		081A233A1C15EA7D00C4B259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		081A233D1C15EA7D00C4B259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		081A233F1C15EA7D00C4B259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081A23451C15EC4E00C4B259 /* ZLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLModel.h; sourceTree = "<group>"; };
+		081A23461C15EC4E00C4B259 /* ZLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLModel.m; sourceTree = "<group>"; };
+		081A23481C15EC6F00C4B259 /* ZLModel+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZLModel+Property.h"; sourceTree = "<group>"; };
+		081A23491C15EC6F00C4B259 /* ZLModel+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZLModel+Property.m"; sourceTree = "<group>"; };
+		081A234B1C15ECF000C4B259 /* NSObject+ZLProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZLProperty.h"; sourceTree = "<group>"; };
+		081A234C1C15ECF000C4B259 /* NSObject+ZLProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZLProperty.m"; sourceTree = "<group>"; };
+		081A234F1C15ED2900C4B259 /* NSObject+ZLInvokeMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZLInvokeMethod.h"; sourceTree = "<group>"; };
+		081A23501C15ED2900C4B259 /* NSObject+ZLInvokeMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZLInvokeMethod.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +74,11 @@
 				081A23321C15EA7D00C4B259 /* AppDelegate.m */,
 				081A23341C15EA7D00C4B259 /* ViewController.h */,
 				081A23351C15EA7D00C4B259 /* ViewController.m */,
-				081A23371C15EA7D00C4B259 /* Main.storyboard */,
-				081A233A1C15EA7D00C4B259 /* Assets.xcassets */,
-				081A233C1C15EA7D00C4B259 /* LaunchScreen.storyboard */,
-				081A233F1C15EA7D00C4B259 /* Info.plist */,
+				081A23451C15EC4E00C4B259 /* ZLModel.h */,
+				081A23461C15EC4E00C4B259 /* ZLModel.m */,
+				081A23481C15EC6F00C4B259 /* ZLModel+Property.h */,
+				081A23491C15EC6F00C4B259 /* ZLModel+Property.m */,
+				081A234E1C15ECFC00C4B259 /* resource */,
 				081A232E1C15EA7D00C4B259 /* Supporting Files */,
 			);
 			path = JustCategoryTest;
@@ -74,9 +87,24 @@
 		081A232E1C15EA7D00C4B259 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				081A232F1C15EA7D00C4B259 /* main.m */,
+				081A234B1C15ECF000C4B259 /* NSObject+ZLProperty.h */,
+				081A234C1C15ECF000C4B259 /* NSObject+ZLProperty.m */,
+				081A234F1C15ED2900C4B259 /* NSObject+ZLInvokeMethod.h */,
+				081A23501C15ED2900C4B259 /* NSObject+ZLInvokeMethod.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		081A234E1C15ECFC00C4B259 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				081A23371C15EA7D00C4B259 /* Main.storyboard */,
+				081A233A1C15EA7D00C4B259 /* Assets.xcassets */,
+				081A233C1C15EA7D00C4B259 /* LaunchScreen.storyboard */,
+				081A233F1C15EA7D00C4B259 /* Info.plist */,
+				081A232F1C15EA7D00C4B259 /* main.m */,
+			);
+			name = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +179,11 @@
 			files = (
 				081A23361C15EA7D00C4B259 /* ViewController.m in Sources */,
 				081A23331C15EA7D00C4B259 /* AppDelegate.m in Sources */,
+				081A234A1C15EC6F00C4B259 /* ZLModel+Property.m in Sources */,
 				081A23301C15EA7D00C4B259 /* main.m in Sources */,
+				081A23511C15ED2900C4B259 /* NSObject+ZLInvokeMethod.m in Sources */,
+				081A234D1C15ECF000C4B259 /* NSObject+ZLProperty.m in Sources */,
+				081A23471C15EC4E00C4B259 /* ZLModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +332,7 @@
 				081A23441C15EA7D00C4B259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
